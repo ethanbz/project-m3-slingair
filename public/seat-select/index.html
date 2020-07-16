@@ -10,15 +10,22 @@
         <div class='main'>
             <header class='header'>
                 <h1 class='header-logo'>Air Slingshot</h1>
-            </div>
+                <div id='links'>
+                    <a href='/seat-select'>Make Reservation</a>
+                    <a href='/view-reservation'>View Reservation</a>
+                </div>
+            </header>
             <div class="flight-select">
-                <label for="flight">Flight Number :</label>
-                <input name="flight" id="flight" class="flight" type="text" placeholder="flight #" />
+                <h2>Select your flight:</h2>
+                <input name="flight" id="flight" class="flight" type="radio" value='SA123' />
+                <label for="flight">SA123</label>
+                <input name="flight" id="flight2" class="flight" type="radio" value='SA231' />
+                <label for="flight2">SA231</label>
             </div>
             <div class="form-container">
                 <h2>Select your seat and Provide your information!</h2>
                 <form id="seats" class="content" name="salesForm" onsubmit="handleConfirmSeat(event)">
-                    <div class='form-content plane'>
+                    <div id='contain' class='form-content plane'>
                         <div id="seats-section"></div>
                     </div>
                     <div class="form-content user">

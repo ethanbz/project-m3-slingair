@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0, minimal-ui" />
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+        <title>Confirmed!</title>
+    </head>
+    <body>
+        <div class='main'>
+            <header class='header'>
+                <h1 class='header-logo'>Air Slingshot</h1>
+                <div id='links'>
+                    <a href='/seat-select'>Make Reservation</a>
+                    <a href='/view-reservation'>View Reservation</a>
+                </div>
+            </header>
+            <div class="content">
+                
+                <label for="email">Enter your email to view your reservation:</label>
+                <input id="emailRes" type="email" name="email" placeholder="Your email" required />
+                <button onclick='getReservations()'>submit</button>
+            </div>
+            <ul id="user-info2">
+                <li>Flight #:<span id="flight"></span> seat #: <span id="seat"></span></li>
+                <li>Name:<span id="name"></span></li>
+                <li>Email:<span id="email"></span></li>
+            </ul>
+            <div id='error'></div>
+        </div>
+        <p class='footer-logo' id='fuuter'>The only way to fly!</p>
+        <script src="./view-reservation.js"></script>
+    </body>
+</html>
